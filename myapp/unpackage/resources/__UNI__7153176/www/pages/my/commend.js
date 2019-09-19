@@ -1,0 +1,2 @@
+setCssToHead([".",[1],"pic{ background-image: url(../../static/img/share_app_img_bottom.b7310c59.png-do-not-use-local-path-./pages/my/commend.wxss\x263\x2619); width: ",[0,750],"; height: ",[0,1084],"; background-size:cover; }\n",],undefined,{path:"./pages/my/commend.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/my/commend.wxml') } }));

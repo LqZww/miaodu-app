@@ -1,0 +1,118 @@
+
+.header {
+	font-size: 62rpx;
+	margin: 100rpx 36rpx 50rpx 36rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.iconfont {
+	font-size: 60rpx;
+}
+swiper-item image {
+	width: 100%;
+}
+.main {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.sort,
+.list {
+	width: 340rpx;
+	height: 120rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding-left: 26rpx;
+	color: #FFFFFF;
+}
+.sort {
+	background: #4db9d6;
+	margin: 45rpx 10rpx 45rpx 20rpx;
+}
+.list {
+	background: #e9b360;
+	margin: 45rpx 20rpx 45rpx 10rpx;
+}
+.sort text:nth-child(1),
+.list text:nth-child(1) {
+	font-size: 28rpx;
+	padding-top: 30rpx;
+	padding-bottom: 8rpx;
+}
+.sort text:nth-child(2),
+.list text:nth-child(2) {
+	font-size: 22rpx;
+}
+.footer {
+	margin: 0 25rpx;
+}
+.list-tit {
+	font-weight: bold;
+	line-height: 130rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin-top: -10rpx;
+}
+.book {
+	margin-bottom: 60rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.book image {
+	width: 295rpx;
+	height: 185rpx;
+	margin-right: 34rpx;
+}
+.book .intro {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+.intro text {
+	font-size: 22rpx;
+	width: 350rpx;
+	color: #8692ab;
+}
+.intro text:nth-child(1) {
+	font-size: 28rpx;
+	color: #000000;
+}
+.intro text:nth-child(3) {
+	font-size: 28rpx;
+}
+

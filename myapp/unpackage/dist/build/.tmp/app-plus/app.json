@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/read/read",
+    "pages/book/book",
+    "pages/footprint/footprint",
+    "pages/my/my",
+    "pages/booklist/booklist",
+    "pages/read/detail",
+    "pages/read/readstory",
+    "pages/my/download",
+    "pages/index/index",
+    "pages/my/commend",
+    "pages/my/sentence-collect",
+    "pages/my/books-collect",
+    "pages/my/booklist-collect"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "妙读",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#b4bed1",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#425b99",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "秒读",
+        "iconPath": "static/img/img_tab_discovery_d.png",
+        "selectedIconPath": "static/img/img_tab_discovery_p.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "书馆",
+        "iconPath": "static/img/img_tab_bookstore_d.png",
+        "selectedIconPath": "static/img/img_tab_bookstore_p.png"
+      },
+      {
+        "pagePath": "pages/footprint/footprint",
+        "text": "足迹",
+        "iconPath": "static/img/img_tab_bookshelf_d.png",
+        "selectedIconPath": "static/img/img_tab_bookshelf_p.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "static/img/img_tab_personal_d.png",
+        "selectedIconPath": "static/img/img_tab_personal_p.png"
+      }
+    ]
+  },
+  "nvueCompiler": "weex",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "myapp",
+  "compilerVersion": "2.2.2",
+  "usingComponents": {}
+}

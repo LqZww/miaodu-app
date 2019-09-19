@@ -1,0 +1,9 @@
+
+.pic{
+	background-image: url(../../static/img/share_app_img_bottom.b7310c59.png);
+	width: 750rpx;
+	height: 1084rpx;
+	background-size:cover;
+}
+
+

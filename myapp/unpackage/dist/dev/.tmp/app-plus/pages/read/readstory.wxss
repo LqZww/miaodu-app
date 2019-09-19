@@ -1,0 +1,16 @@
+
+swiper {
+	height: 3000rpx;
+}
+.main {
+	word-wrap: break-word;
+	margin: 262rpx 60rpx 0 40rpx;
+}
+.title {
+	font-size: 55rpx;
+	margin-bottom: 80rpx;
+}
+.info {
+	line-height: 70rpx;
+}
+

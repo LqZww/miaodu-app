@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+    <head>
+        <meta charset="UTF-8" />
+        <script>
+            var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+                CSS.supports('top: constant(a)'))
+            document.write(
+                '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+                (coverSupport ? ', viewport-fit=cover' : '') + '" />')
+        </script>
+        <title>View</title>
+        <style>
+            * {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            input[type="search"i]::-webkit-search-cancel-button {
+                display: none;
+            }
+        </style>
+        <script>
+            var __wxConfig = {"debug":false,"appname":"myapp","entryPagePath":"pages/read/read.html","page":{"pages/read/read.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/book/book.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/footprint/footprint.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/my/my.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/booklist/booklist.html":{"window":{"navigationBarTitleText":"书单中心","navigationBarTextStyle":"black","navigationBarBackgroundColor":"#ffffff","usingComponents":{}}},"pages/read/detail.html":{"window":{"navigationBarTitleText":"","disableScroll":"true","titleNView":{"buttons":[{"text":"分享","fontSize":"16","float":"right"}]},"usingComponents":{}}},"pages/read/readstory.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/my/download.html":{"window":{"navigationBarTitleText":"","titleNView":{"buttons":[{"text":"正在下载","fontSize":"16","color":"#969fa0","colorPressed":"#343535"},{"text":"已下载","fontSize":"16","color":"#969fa0","colorPressed":"#343535"}]},"usingComponents":{}}},"pages/index/index.html":{"window":{"navigationStyle":"custom","usingComponents":{}}},"pages/my/commend.html":{"window":{"navigationBarTitleText":"","usingComponents":{}}},"pages/my/sentence-collect.html":{"window":{"navigationBarTitleText":"金句收藏","usingComponents":{}}},"pages/my/books-collect.html":{"window":{"navigationBarTitleText":"书籍收藏","usingComponents":{}}},"pages/my/booklist-collect.html":{"window":{"navigationBarTitleText":"书单收藏","usingComponents":{}}}},"global":{"window":{"navigationBarTextStyle":"black","navigationBarTitleText":"妙读","navigationBarBackgroundColor":"#F8F8F8","backgroundColor":"#F8F8F8"}},"tabBar":{"color":"#b4bed1","selectedColor":"#425b99","backgroundColor":"#ffffff","borderStyle":"white","list":[{"pagePath":"pages/read/read.html","text":"秒读","iconPath":"static/img/img_tab_discovery_d.png","selectedIconPath":"static/img/img_tab_discovery_p.png"},{"pagePath":"pages/book/book.html","text":"书馆","iconPath":"static/img/img_tab_bookstore_d.png","selectedIconPath":"static/img/img_tab_bookstore_p.png"},{"pagePath":"pages/footprint/footprint.html","text":"足迹","iconPath":"static/img/img_tab_bookshelf_d.png","selectedIconPath":"static/img/img_tab_bookshelf_p.png"},{"pagePath":"pages/my/my.html","text":"我的","iconPath":"static/img/img_tab_personal_d.png","selectedIconPath":"static/img/img_tab_personal_p.png"}],"position":"bottom"},"networkTimeout":{"request":60000,"connectSocket":60000,"uploadFile":60000,"downloadFile":60000},"platform":"devtools","pages":["pages/read/read","pages/book/book","pages/footprint/footprint","pages/my/my","pages/booklist/booklist","pages/read/detail","pages/read/readstory","pages/my/download","pages/index/index","pages/my/commend","pages/my/sentence-collect","pages/my/books-collect","pages/my/booklist-collect"],"nvueCompiler":"weex","renderer":"auto","splashscreen":{"alwaysShowBeforeRender":true,"autoclose":false},"compilerVersion":"2.2.2","usingComponents":{}}
+        </script>
+        <script>
+            var __id__ = '';
+            window.__dispatchGenerateFunc__ = function(page) {
+                __id__ = page;
+                document.title = page;
+                // window.history.pushState('', '', page);
+                var wxss = page.replace('.html', '.wxss')
+                if (
+                    typeof __wxAppCode__ !== 'undefined' &&
+                    __wxAppCode__.hasOwnProperty(wxss)
+                ) {
+                    var setCssToHead = __wxAppCode__[wxss]
+                    typeof setCssToHead === 'function' && setCssToHead()
+                    document.dispatchEvent(new CustomEvent("generateFuncReady", {
+                        detail: {
+                            generateFunc: $gwx(page.replace('.html', '.wxml'))
+                        }
+                    }));
+                } else {
+                    plus.webview.currentWebview().setJsFile('_www/' + page.replace('.html', '.js'));
+                }
+            };
+        </script>
+        <script src="__uniappes6.js"></script>
+        <script src="uniapp://ready"></script>
+    </head>
+
+    <body>
+        <div></div>
+    </body>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "navigationBarTitleText": "",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "正在下载",
+        "fontSize": "16",
+        "color": "#969fa0",
+        "colorPressed": "#343535"
+      },
+      {
+        "text": "已下载",
+        "fontSize": "16",
+        "color": "#969fa0",
+        "colorPressed": "#343535"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

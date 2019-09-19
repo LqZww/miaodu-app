@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>秒读APP管理端</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper" id="app">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="https://github.com/LqZww" target="_black" class="nav-link">Github</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="https://zhouwanwen.top" target="_black" class="nav-link">Blog</a>
+        </li>
+      </ul>
+
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-link">
+        <span class="brand-text font-weight-light">
+          秒读APP管理平台
+        </span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+
+        <!-- Sidebar Menu -->
+        <nav>
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item has-treeview">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  图书发布
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <div class="content-wrapper">
+
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>图书发布区</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 内容区 -->
+      <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <!-- general form elements -->
+              <div class="card card-primary">
+                <div class="card-header">
+                  <h3 class="card-title">Example</h3>
+                </div>
+                <form role="form">
+                  <div class="card-body">
+                    <div class="form-group">
+                      <label>图书名称</label>
+                      <input v-model="bookdata.bookname" type="text" class="form-control" placeholder="请输入图书名称">
+                    </div>
+                    <div class="form-group">
+                      <label>作者名称</label>
+                      <input v-model="bookdata.author" type="text" class="form-control" placeholder="请输入作者名称">
+                    </div>
+                    <div class="form-group">
+                      <label>图片路径</label>
+                      <input v-model="bookdata.bookimg" type="text" class="form-control" placeholder="请输入图片路径">
+                    </div>
+                    <div class="form-group">
+                      <label>图书简介1</label>
+                      <input v-model="bookdata.titone" type="text" class="form-control" placeholder="请输入图书简介1">
+                    </div>
+                    <div class="form-group">
+                      <label>图书简介2</label>
+                      <input v-model="bookdata.tittwo" type="text" class="form-control" placeholder="请输入图书简介2">
+                    </div>
+                    <div class="form-group">
+                      <label>图书概述</label>
+                      <input v-model="bookdata.info" type="text" class="form-control" placeholder="请输入图书概述">
+                    </div>
+                    <div class="form-group">
+                      <label>已读百分比</label>
+                      <input v-model="bookdata.progress" type="text" class="form-control" placeholder="请输入已读百分比(1~100)">
+                    </div>
+                    <div class="form-group">
+                      <label>图书小标题</label>
+                      <input v-model="bookdata.title" type="text" class="form-control" placeholder="请输入图书小标题">
+                    </div>
+                    <div class="form-group">
+                      <label>图书内容</label>
+                      <input v-model="bookdata.words" type="text" class="form-control" placeholder="请输入图书内容">
+                    </div>
+
+
+                  </div>
+
+                  <div class="card-footer">
+                    <button @click="subFn" type="button" class="btn btn-primary">
+                      确定发布
+                    </button>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </div>
+  <script src="js/vue.js"></script>
+  <script src="js/axios.min.js"></script>
+  <script type="text/javascript">
+    new Vue({
+      el: '#app',
+      data: {
+        bookdata: {
+          'bookname': '斗破苍穹',
+          'author': '天蚕土豆 著',
+          'bookimg': 'https://img03.sogoucdn.com/app/a/100520093/ca86e620b9e623ff-7f2f5cb76becee35-3f8eda810b75142e83d3c27ed12cd8f3.jpg',
+          'titone': '心潮澎湃',
+          'tittwo': '迎风挥击千层浪，少年不败热血',
+          "title": "第一章 陨落的天才",
+          "words": "斗之力，三段  望着测验魔石碑上面闪亮得甚至有些刺眼的五个大字，少年面无表情，唇角有着一抹自嘲，紧握的手掌，因为大力，而导致略微尖锐的指甲深深的刺进了掌心之中，带来一阵阵钻心的疼痛  萧炎，斗之力，三段级别：低级测验魔石碑之旁，一位中年男子，看了一眼碑上所显示出来的信息，语气漠然的将之公布了出来  中年男子话刚刚脱口，便是不出意外的在人头汹涌的广场上带起了一阵嘲讽的骚动。  三段嘿嘿，果然不出我所料，这个天才这一年又是在原地踏步  哎，这废物真是把家族的脸都给丢光了。  要不是族长是他的父亲，这种废物，早就被驱赶出家族，任其自生自灭了，哪还有机会待在家族中白吃白喝。  唉，昔年那名闻乌坦城的天才少年，如今怎么落魄成这般模样了啊  谁知道呢，或许做了什么亏心事，惹得神灵降怒了吧  周围传来的不屑嘲笑以及惋惜轻叹，落在那如木桩待在原地的少年耳中，恍如一根根利刺狠狠的扎在心脏一般，让得少年呼吸微微急促。  少年缓缓抬起头来，露出一张有些清秀的稚嫩脸庞，漆黑的眸子木然的在周围那些嘲讽的同龄人身上扫过，少年嘴角的自嘲，似乎变得更加苦涩了。  这些人，都如此刻薄势力吗或许是因为三年前他们曾经在自己面前露出过最谦卑的笑容，所以，如今想要讨还回去吧苦涩的一笑，萧炎落寞的转身，安静的回到了队伍的最后一排，孤单的身影，与周围的世界，有些格格不入。",
+          "info": "斗之力，三段  望着测验魔石碑上面闪亮得甚至有些刺眼的五个大字，少年面无表情，唇角有着一抹自嘲，紧握的手掌，因为大力，而导致略微尖锐的指甲深深的刺进了掌心之中，带来一阵阵钻心的疼痛  萧炎，斗之力，三段级别：低级测验魔石碑之旁，一位中年男子，看了一眼碑上所显示出来的信息，语气漠然的将之公布了出来  中年男子话刚刚脱口，便是不出意外的在人头汹涌的广场上带起了一阵嘲讽的骚动。  三段嘿嘿，果然不出我所料，这个天才这一年又是在原地踏步哎。",
+          "progress": "10"
+        }
+      },
+      methods: {
+        subFn: function () {
+          var dataStr = '';
+          var data = this.bookdata
+          for (var attr in data) {
+            dataStr += `${attr}=${data[attr]}&`
+          }
+          console.log(dataStr);
+          axios.get('http://localhost:8081/admin/pub?' + dataStr)
+            .then(function (result) {
+              alert("恭喜你，添加成功啦！");
+              console.log(result)
+            })
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/read/read",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/book/book",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/footprint/footprint",
+			"style": {
+				"navigationStyle": "custom"
+				
+			}
+		}, {
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/book/booklist",
+			"style": {
+				"navigationBarTitleText": "书单中心",
+				"navigationBarTextStyle": "black",
+				"navigationBarBackgroundColor": "#ffffff"
+			}
+		}, {
+			"path": "pages/read/detail",
+			"style": {
+				"navigationBarTitleText": "",
+				"disableScroll": "true",
+				
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "分享",
+							"fontSize": "16",
+							"float": "right"
+						}]
+
+					}
+				}
+			}
+		}, {
+			"path": "pages/read/readstory",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/my/download",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+								"text": "正在下载",
+								"fontSize": "16",
+								"color": "#969fa0",
+								"colorPressed": "#343535"
+							},
+							{
+								"text": "已下载",
+								"fontSize": "16",
+								"color": "#969fa0",
+								"colorPressed": "#343535"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/my/commend",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/my/sentence-collect",
+			"style": {
+				"navigationBarTitleText": "金句收藏"
+			}
+		}, {
+			"path": "pages/my/books-collect",
+			"style": {
+				"navigationBarTitleText": "书籍收藏"
+			}
+		}, {
+			"path": "pages/my/booklist-collect",
+			"style": {
+				"navigationBarTitleText": "书单收藏"
+			}
+		}, {
+			"path": "pages/book/allbook",
+			"style": {
+				"navigationBarTitleText": "全部分类"
+			}
+		}
+	],
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "妙读",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+		// 取消顶部导航栏
+		// "navigationStyle":"custom"
+	},
+	"tabBar": {
+		"color": "#b4bed1",
+		"backgroundColor": "#ffffff",
+		"selectedColor": "#425b99",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/read/read",
+				"text": "秒读",
+				"iconPath": "static/img/img_tab_discovery_d.png",
+				"selectedIconPath": "static/img/img_tab_discovery_p.png"
+			},
+			{
+				"pagePath": "pages/book/book",
+				"text": "书馆",
+				"iconPath": "static/img/img_tab_bookstore_d.png",
+				"selectedIconPath": "static/img/img_tab_bookstore_p.png"
+			},
+			{
+				"pagePath": "pages/footprint/footprint",
+				"text": "足迹",
+				"iconPath": "static/img/img_tab_bookshelf_d.png",
+				"selectedIconPath": "static/img/img_tab_bookshelf_p.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "static/img/img_tab_personal_d.png",
+				"selectedIconPath": "static/img/img_tab_personal_p.png"
+			}
+		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

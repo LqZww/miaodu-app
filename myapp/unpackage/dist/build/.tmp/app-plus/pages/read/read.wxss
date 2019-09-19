@@ -1,0 +1,91 @@
+
+swiper {
+	height: 980rpx;
+	width: 100%;
+}
+.main {
+	margin: 30rpx;
+}
+.header {
+	font-size: 62rpx;
+	margin: 100rpx 36rpx 50rpx 36rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.iconfont {
+	font-size: 60rpx;
+}
+.main {
+	color: #fff;
+	background-size: cover;
+	width: 90%;
+	border: 1rpx solid black;
+	border-radius: 20rpx;
+	height: 920rpx;
+	margin-top: 45rpx;
+	position: relative;
+}
+.main>text {
+	margin: 24rpx 0 0 38rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.main>text:nth-child(1) {
+	margin-top: 65rpx;
+}
+.main>text:nth-child(2) {
+	margin-top: 20rpx;
+}
+.main>text:nth-child(3) {
+	margin-top: 44rpx;
+}
+.main>text:nth-child(4) {
+	margin-top: 28rpx;
+}
+.read {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 0 42rpx 0 0;
+	position: absolute;
+	right: 0;
+	bottom: 42rpx;
+}
+.icon-listen {
+	border: 16rpx solid #000000;
+	border-radius: 50%;
+	font-size: 40rpx;
+	width: 40rpx;
+	height: 40rpx;
+	margin-right: 25rpx;
+	color: #fff;
+	background: #000000;
+}
+.once {
+	border: 20rpx solid #050504;
+	border-radius: 35rpx;
+	background: #050504;
+	color: #fff;
+}
+

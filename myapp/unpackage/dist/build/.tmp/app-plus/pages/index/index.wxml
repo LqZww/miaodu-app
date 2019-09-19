@@ -1,0 +1,1 @@
+<view class="content"><view class="head clearfix"><text>跳过登录</text></view><view class="main"><text>妙读</text><text>一刻钟读世界万千</text></view><view class="enter1"><button type="primary">淘宝登录</button><button type="primary">微信登录</button></view><view class="enter2"><button>支付宝登录</button><text>|</text><button>微博登录</button></view><view><view></view><text>已阅读并同意....</text></view></view>

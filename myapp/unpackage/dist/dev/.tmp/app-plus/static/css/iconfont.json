@@ -1,0 +1,72 @@
+{
+  "id": "1416074",
+  "name": "秒读app-my",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "183151",
+      "name": "collect",
+      "font_class": "collect",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "277074",
+      "name": "dui",
+      "font_class": "dui",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "344541",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "730031",
+      "name": "listen2",
+      "font_class": "listen",
+      "unicode": "e6a7",
+      "unicode_decimal": 59047
+    },
+    {
+      "icon_id": "2905956",
+      "name": "arrow_down",
+      "font_class": "right",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "4341705",
+      "name": "left",
+      "font_class": "left",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "6490962",
+      "name": "search close",
+      "font_class": "close",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "6548962",
+      "name": "down-load",
+      "font_class": "download",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "10318793",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

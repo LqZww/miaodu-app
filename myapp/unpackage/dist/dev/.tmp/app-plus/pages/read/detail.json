@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "",
+  "disableScroll": "true",
+  "titleNView": {
+    "buttons": [
+      {
+        "text": "分享",
+        "fontSize": "16",
+        "float": "right"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

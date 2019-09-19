@@ -1,0 +1,1 @@
+<view><swiper><block wx:for="{{readS}}" wx:for-item="item" wx:for-index="index"><swiper-item><view class="main"><scroll-view scroll-y="true"><view class="title">{{item.title}}</view><view class="info">{{item.words}}</view></scroll-view></view></swiper-item></block></swiper></view>
